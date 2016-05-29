@@ -3,13 +3,13 @@
 ====
 1、需要设置的属性<br>
 1）colour：</br>
-  ~colourFillColor~：填充颜色<br>
-  colourRadius：半径<br>
-  colourArcCenter：圆点位置<br>
-  colourStartAngle ：起始位置<br>
-  colourEndAngle：结束位置<br>
+  * `colourFillColor`：填充颜色<br>
+  * `colourRadius`：半径<br>
+  * `colourArcCenter`：圆点位置<br>
+  * `colourStartAngle `：起始位置<br>
+  * `colourEndAngle`：结束位置<br>
 2）normal<br>
-normalFillColor：填充颜色<br>
+  * normalFillColor：填充颜色<br>
 2、可选属性<br>
-cateLabel：所属类别<br>
-moneyNumLabel：花费金额<br>
+  * cateLabel：所属类别<br>
+  * moneyNumLabel：花费金额<br>
