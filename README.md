@@ -12,5 +12,6 @@
 ## 2、可选设置的属性<br>
   * cateLabel：所属类别<br>
   * moneyNumLabel：花费金额<br>
+
 ## 3、我的博客<br>
 [blog](http://www.cnblogs.com/fengzhihao/)
