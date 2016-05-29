@@ -2,7 +2,7 @@
 一个绘制圆形统计图的视图
 1、需要设置的属性
 1）colour：
-colourFillColor：填充颜色
+colourFillColor：填充颜色</b>
 colourRadius：半径
 colourArcCenter：圆点位置
 colourStartAngle ：起始位置
