@@ -50,7 +50,19 @@
     UIBezierPath * colorPath = [UIBezierPath bezierPathWithArcCenter:self.colourArcCenter radius:self.colourRadius startAngle:self.colourStartAngle endAngle:self.colourEndAngle clockwise:YES];
     [self.colourFillColor set];
     colorPath.lineWidth = 5.0;
-    [colorPath stroke];
+//    [colorPath stroke];
+    //1.1彩色状态的动画
+    CAShapeLayer * colorShapeLayer = [CAShapeLayer layer];
+    colorShapeLayer.lineWidth = 5.0;
+    CABasicAnimation * colorBaseAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    colorBaseAnimation.fromValue = @0;
+    colorBaseAnimation.toValue = @1;
+    colorBaseAnimation.duration = 2;
+    colorShapeLayer.path = colorPath.CGPath;
+    colorShapeLayer.fillColor = [UIColor clearColor].CGColor;
+    colorShapeLayer.strokeColor = self.colourFillColor.CGColor;
+    [self.layer addSublayer:colorShapeLayer];
+    [colorShapeLayer addAnimation:colorBaseAnimation forKey:@"strokeEnd"];
     
     //2.normal
     self.normalArcCenter = self.colourArcCenter;
@@ -61,7 +73,20 @@
     UIBezierPath * normalPath = [UIBezierPath bezierPathWithArcCenter:self.normalArcCenter radius:self.normalRadius startAngle:self.normalStartAngle endAngle:self.normalEndAngle clockwise:YES];
     [self.normalFillColor set];
     normalPath.lineWidth = 5.0;
-    [normalPath stroke];
+//    [normalPath stroke];
+    //2.1普通状态的动画
+    CAShapeLayer * normalShapeLayer = [CAShapeLayer layer];
+    normalShapeLayer.lineWidth = 5.0;
+    CABasicAnimation * normalBaseAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    normalBaseAnimation.fromValue = @0;
+    normalBaseAnimation.toValue = @1;
+    normalBaseAnimation.duration = 2;
+    
+    normalShapeLayer.path = normalPath.CGPath;
+    normalShapeLayer.fillColor = [UIColor clearColor].CGColor;
+    normalShapeLayer.strokeColor = self.normalFillColor.CGColor;
+    [self.layer addSublayer:normalShapeLayer];
+    [normalShapeLayer addAnimation:normalBaseAnimation forKey:@"strokeEnd"];
 }
 
 @end
