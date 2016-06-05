@@ -15,3 +15,6 @@
 
 ## 3、我的博客<br>
 [blog](http://www.cnblogs.com/fengzhihao/)
+
+## 4、增添动画效果
+![Alt Text](https://github.com/fengzhihao123/FZHDrawCircle/blob/master/FZHDrawCircle/fzhPopView.gif)
