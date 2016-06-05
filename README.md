@@ -17,4 +17,5 @@
 ## 4、增添动画效果
 ![Alt Text](https://github.com/fengzhihao123/FZHDrawCircle/blob/master/FZHDrawCircle/fzhPopView.gif)
 
-## 5、增添控件适配
+## 5、增添控件适配、调整属性设置使用更加简单
+  
