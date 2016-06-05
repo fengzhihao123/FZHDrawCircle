@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface FZHDrawCircleView : UIView
+//彩色和普通
+@property (nonatomic, strong) UIBezierPath *colorPath;
+@property (nonatomic, strong) UIBezierPath *normalPath;
+
 //彩色弧长的属性
 @property (nonatomic, strong) UIColor *colourFillColor;
 @property (nonatomic, assign) CGFloat colourStartAngle;
