@@ -11,11 +11,8 @@
   * cateLabel：所属类别<br>
   * moneyNumLabel：花费金额<br>
 
-## 3、我的博客<br>
-[blog](http://www.cnblogs.com/fengzhihao/)
-
-## 4、增添动画效果
+## 3、增添动画效果
 ![Alt Text](https://github.com/fengzhihao123/FZHDrawCircle/blob/master/FZHDrawCircle/fzhPopView.gif)
 
-## 5、增添控件适配、调整属性设置使用更加简单
+## 4、增添控件适配、调整属性设置使用更加简单
   
